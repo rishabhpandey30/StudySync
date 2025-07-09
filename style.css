@@ -27,7 +27,7 @@ body{
 }
 
 .header-content{
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -44,10 +44,10 @@ body{
     gap: 0.65rem;
 }
 .logo-icon{
-    height: 2.5rem;
+    height: 3.5rem;
     width: 2rem;
 }
-.logo-text{
+.logo-text1{
     font-size: 1.7rem;
 }
 .nav{
@@ -111,4 +111,161 @@ body{
 .menu-icon {
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.main-section{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-left{
+    padding-top: 1.5rem;
+    text-align: center;
+    animation : slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideFromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-label{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color); 
+}
+
+.section-title{
+    font-size: 2.3rem;
+    padding: 0.9rem;
+    color: var(--text-color);
+}
+
+.section-description{
+    color: var(--gray);
+    font-size: 1.13rem;
+}
+.button-group{
+    display: flex;
+    gap: 1.6rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.start-button, 
+.tour-button{
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transition: all 0.1s;
+    padding: 0.5rem 1.1rem;  
+    font-size: 1rem;
+    font-weight: 600; 
+}
+.tour-button{
+    background-color: var(--dark-gray);
+}
+.start-button:hover{
+    background-color: #5254f8;
+}
+.tour-button:hover{
+    background-color: var(--gray);
+}
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container{
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    height: 57vh;
+}
+.section-image{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .main-section{
+        flex-direction: row;
+
+    }
+    .content-left{
+        max-width: 50%;
+        padding-top: 3rem;
+        text-align: left;
+    }
+    .section-title{
+        padding-left: 0;
+        font-size: 3.1rem;
+    }
+    .button-group{
+        padding-left: 0;
+        justify-content: start;
+    }
+    .image-container{
+        height: 72vh;
+    }
+    .section-description{
+        padding-top: 1.3rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+}
+
+.company-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.2rem;
+    animation: slideFromLeft 1s ease forwards;
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3.7rem;
+    padding: 1rem;
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 0.62rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    padding: 1.5rem 2rem;
+}
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    gap: 0.5rem;
+}
+.head-2{
+    font-size: 1.75rem;
+}
+.svg-img{
+    height: 1.55rem;
+}
+.logo-text{
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+@media screen and (min-width: 768px) {
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
 }
