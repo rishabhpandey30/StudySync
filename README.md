@@ -6,7 +6,7 @@
 
 ## 🚀 Live Preview
 
-🔗 [GitHub Pages / Live Demo](#) *[(Add your link here)](https://rishabhpandey30.github.io/StudySync/)*
+🔗 [Live Demo -> ](#) *[Click TO view](https://rishabhpandey30.github.io/StudySync/)*
 
 ---
 
