@@ -52,38 +52,13 @@ StudySync/
 ├── index.html            # Main HTML file
 ├── style.css             # Custom CSS styling
 └── images/               # All image assets used in the site
-
-
-
-How to Run Locally
+```
+##  How to Run Locally
 Clone the repository:
 
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/your-username/StudySync.git
-Navigate to the folder:
-
-bash
-Copy
-Edit
-cd StudySync
-Open index.html in your browser:
-
-bash
-Copy
-Edit
-start index.html     # Windows
-open index.html      # macOS
+```
 
 
-## Deployment
-To deploy this on GitHub Pages:
 
-Push your project to a GitHub repository.
-
-Go to Settings > Pages.
-
-Select the branch (e.g., main) and root folder.
-
-Save and visit the generated link!
